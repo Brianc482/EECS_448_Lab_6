@@ -1,0 +1,6 @@
+The majority of the tests worked correctly and returned the expected value, however I found two tests that failed...
+Test 6: peekFront() to find if 10 is the front value... FAILED the value is 20!
+Test 7: dequeue()...a queue is FIFO so the remaining value should be 20...FAILED the value at the front of the queue is 10!
+These tests suggested that the "queue" actually behaved more like a "stack" where the last value that was enqueued was the first value returned.
+I believe the bug to be in the manner with which values are being inserted.
+Rather than FIFO - first in, first out, the queue behaves in a LIFO - last in, first out, manner. 
